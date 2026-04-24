@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check LocalStorage</title>
+</head>
+<body>
+    <h1>LocalStorage Data</h1>
+    <pre id="data"></pre>
+    <script>
+        const users = localStorage.getItem('users');
+        const members = localStorage.getItem('members');
+        const userInfo = localStorage.getItem('userInfo');
+        
+        document.getElementById('data').innerHTML = `
+Users:
+${users ? JSON.stringify(JSON.parse(users), null, 2) : 'No users found'}
+
+Members:
+${members ? JSON.stringify(JSON.parse(members), null, 2) : 'No members found'}
+
+User Info:
+${userInfo ? JSON.stringify(JSON.parse(userInfo), null, 2) : 'No user info found'}
+        `;
+    </script>
+</body>
+</html>

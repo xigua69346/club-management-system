@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.ActivityDao">
+    <select id="getAllActivities" resultType="Activity">
+        SELECT * FROM activity
+    </select>
+    
+    <select id="getActivityById" resultType="Activity">
+        SELECT * FROM activity WHERE id = #{id}
+    </select>
+    
+    <insert id="addActivity" parameterType="Activity">
+        INSERT INTO activity (name, club, leader, start_time, end_time, location, description, budget, status) 
+        VALUES (#{name}, #{club}, #{leader}, #{startTime}, #{endTime}, #{location}, #{description}, #{budget}, #{status})
+    </insert>
+    
+    <update id="updateActivity" parameterType="Activity">
+        UPDATE activity SET 
+            name = #{name}, 
+            club = #{club}, 
+            leader = #{leader}, 
+            start_time = #{startTime}, 
+            end_time = #{endTime}, 
+            location = #{location}, 
+            description = #{description}, 
+            budget = #{budget}, 
+            status = #{status}
+        WHERE id = #{id}
+    </update>
+    
+    <delete id="deleteActivity">
+        DELETE FROM activity WHERE id = #{id}
+    </delete>
+    
+    <select id="getActivitiesByClub" resultType="Activity">
+        SELECT * FROM activity WHERE club = #{club}
+    </select>
+    
+    <select id="getActivitiesByStatus" resultType="Activity">
+        SELECT * FROM activity WHERE status = #{status}
+    </select>
+    
+    <select id="getActivitiesByDateRange" resultType="Activity">
+        SELECT * FROM activity WHERE start_time BETWEEN #{startDate} AND #{endDate}
+    </select>
+</mapper>

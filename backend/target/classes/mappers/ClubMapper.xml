@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.ClubDao">
+    <select id="getAllClubs" resultType="Club">
+        SELECT * FROM club
+    </select>
+    
+    <select id="getClubById" resultType="Club">
+        SELECT * FROM club WHERE id = #{id}
+    </select>
+    
+    <insert id="addClub" parameterType="Club">
+        INSERT INTO club (name, category, leader, leader_contact, advisor, description, status) 
+        VALUES (#{name}, #{category}, #{leader}, #{leaderContact}, #{advisor}, #{description}, #{status})
+    </insert>
+    
+    <update id="updateClub" parameterType="Club">
+        UPDATE club SET 
+            name = #{name}, 
+            category = #{category}, 
+            leader = #{leader}, 
+            leader_contact = #{leaderContact}, 
+            advisor = #{advisor}, 
+            description = #{description}, 
+            status = #{status}
+        WHERE id = #{id}
+    </update>
+    
+    <delete id="deleteClub">
+        DELETE FROM club WHERE id = #{id}
+    </delete>
+    
+    <select id="getClubsByStatus" resultType="Club">
+        SELECT * FROM club WHERE status = #{status}
+    </select>
+    
+    <select id="getClubsByCategory" resultType="Club">
+        SELECT * FROM club WHERE category = #{category}
+    </select>
+</mapper>

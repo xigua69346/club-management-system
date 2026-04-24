@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.MemberDao">
+    <select id="getAllMembers" resultType="Member">
+        SELECT * FROM member
+    </select>
+    
+    <select id="getMemberById" resultType="Member">
+        SELECT * FROM member WHERE id = #{id}
+    </select>
+    
+    <insert id="addMember" parameterType="Member">
+        INSERT INTO member (id, name, gender, major, club, role, contact, status) 
+        VALUES (#{id}, #{name}, #{gender}, #{major}, #{club}, #{role}, #{contact}, #{status})
+    </insert>
+    
+    <update id="updateMember" parameterType="Member">
+        UPDATE member SET 
+            name = #{name}, 
+            gender = #{gender}, 
+            major = #{major}, 
+            club = #{club}, 
+            role = #{role}, 
+            contact = #{contact}, 
+            status = #{status}
+        WHERE id = #{id}
+    </update>
+    
+    <delete id="deleteMember">
+        DELETE FROM member WHERE id = #{id}
+    </delete>
+    
+    <select id="getMembersByClub" resultType="Member">
+        SELECT * FROM member WHERE club = #{club}
+    </select>
+    
+    <select id="getMembersByStatus" resultType="Member">
+        SELECT * FROM member WHERE status = #{status}
+    </select>
+    
+    <select id="getMembersByRole" resultType="Member">
+        SELECT * FROM member WHERE role = #{role}
+    </select>
+</mapper>

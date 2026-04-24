@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.MaterialDao">
+    <select id="getAllMaterials" resultType="Material">
+        SELECT * FROM material
+    </select>
+    
+    <select id="getMaterialById" resultType="Material">
+        SELECT * FROM material WHERE id = #{id}
+    </select>
+    
+    <insert id="addMaterial" parameterType="Material">
+        INSERT INTO material (name, club, category, file_path, uploader, description, size) 
+        VALUES (#{name}, #{club}, #{category}, #{filePath}, #{uploader}, #{description}, #{size})
+    </insert>
+    
+    <update id="updateMaterial" parameterType="Material">
+        UPDATE material SET 
+            name = #{name}, 
+            club = #{club}, 
+            category = #{category}, 
+            file_path = #{filePath}, 
+            uploader = #{uploader}, 
+            description = #{description}, 
+            size = #{size}
+        WHERE id = #{id}
+    </update>
+    
+    <delete id="deleteMaterial">
+        DELETE FROM material WHERE id = #{id}
+    </delete>
+    
+    <select id="getMaterialsByClub" resultType="Material">
+        SELECT * FROM material WHERE club = #{club}
+    </select>
+    
+    <select id="getMaterialsByCategory" resultType="Material">
+        SELECT * FROM material WHERE category = #{category}
+    </select>
+    
+    <select id="getMaterialsByUploader" resultType="Material">
+        SELECT * FROM material WHERE uploader = #{uploader}
+    </select>
+</mapper>
