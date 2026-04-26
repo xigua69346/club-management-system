@@ -8,7 +8,7 @@ export default defineConfig({
     host: true, // 允许外部访问
     port: 5173 // 固定端口
   },
-  base: './',
+  base: '/club-management-system/',
   build: {
     outDir: 'dist', // 输出到dist目录
     emptyOutDir: true, // 清空目录
