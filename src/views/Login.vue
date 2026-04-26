@@ -66,7 +66,7 @@ const handleLogin = () => {
     
     // 保存登录状态
     localStorage.setItem('currentUser', JSON.stringify(user))
-    router.push('/')
+    router.push('/home')
   } else {
     alert('用户名、密码或社团选择错误')
   }

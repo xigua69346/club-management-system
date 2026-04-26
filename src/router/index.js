@@ -12,6 +12,11 @@ import Users from '../views/Users.vue'
 const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },
