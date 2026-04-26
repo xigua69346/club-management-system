@@ -11,6 +11,13 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist', // 输出到dist目录
-    emptyOutDir: true // 清空目录
+    emptyOutDir: true, // 清空目录
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/index.js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
   }
 })
