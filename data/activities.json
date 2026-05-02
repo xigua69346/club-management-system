@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "编程大赛",
+    "type": "学术竞赛",
+    "club": "计算机协会",
+    "description": "一年一度的编程竞赛活动",
+    "startTime": "2024-12-01 14:00",
+    "endTime": "2024-12-01 18:00",
+    "location": "教学楼A栋301",
+    "budget": 2000,
+    "participants": 50,
+    "status": "已完成",
+    "createdAt": "2024-11-01"
+  },
+  {
+    "id": 2,
+    "name": "诗歌朗诵会",
+    "type": "文艺演出",
+    "club": "文学社",
+    "description": "展示文学社员风采的诗歌朗诵活动",
+    "startTime": "2024-11-15 19:00",
+    "endTime": "2024-11-15 21:00",
+    "location": "大学生活动中心",
+    "budget": 1000,
+    "participants": 80,
+    "status": "已完成",
+    "createdAt": "2024-10-15"
+  },
+  {
+    "id": 3,
+    "name": "校际篮球友谊赛",
+    "type": "体育赛事",
+    "club": "篮球队",
+    "description": "与其他高校的篮球交流比赛",
+    "startTime": "2024-12-10 15:00",
+    "endTime": "2024-12-10 17:00",
+    "location": "学校体育馆",
+    "budget": 1500,
+    "participants": 20,
+    "status": "待审批",
+    "createdAt": "2024-11-20"
+  },
+  {
+    "id": 4,
+    "name": "社区服务日",
+    "type": "志愿服务",
+    "club": "志愿者协会",
+    "description": "进入社区开展清洁服务",
+    "startTime": "2024-11-25 09:00",
+    "endTime": "2024-11-25 12:00",
+    "location": "光明社区",
+    "budget": 500,
+    "participants": 30,
+    "status": "已完成",
+    "createdAt": "2024-11-10"
+  },
+  {
+    "id": 5,
+    "name": "摄影作品展",
+    "type": "文艺演出",
+    "club": "摄影社",
+    "description": "展示社员优秀摄影作品",
+    "startTime": "2024-12-08 10:00",
+    "endTime": "2024-12-15 17:00",
+    "location": "图书馆展厅",
+    "budget": 800,
+    "participants": 0,
+    "status": "进行中",
+    "createdAt": "2024-11-25"
+  }
+]

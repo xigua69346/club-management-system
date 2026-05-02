@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Python编程入门.pdf",
+    "club": "计算机协会",
+    "category": "文档",
+    "uploader": "张三",
+    "uploadTime": "2024-11-01 10:30",
+    "size": "2.5MB",
+    "description": "Python编程基础教程"
+  },
+  {
+    "id": 2,
+    "name": "诗歌选集.docx",
+    "club": "文学社",
+    "category": "文档",
+    "uploader": "李四",
+    "uploadTime": "2024-11-10 14:20",
+    "size": "1.2MB",
+    "description": "经典诗歌作品集"
+  },
+  {
+    "id": 3,
+    "name": "篮球训练计划.pdf",
+    "club": "篮球队",
+    "category": "文档",
+    "uploader": "王五",
+    "uploadTime": "2024-11-15 09:15",
+    "size": "500KB",
+    "description": "篮球队日常训练计划"
+  },
+  {
+    "id": 4,
+    "name": "志愿者服务手册.pdf",
+    "club": "志愿者协会",
+    "category": "文档",
+    "uploader": "赵六",
+    "uploadTime": "2024-11-18 16:45",
+    "size": "800KB",
+    "description": "志愿者服务指南"
+  },
+  {
+    "id": 5,
+    "name": "摄影构图分析.pdf",
+    "club": "摄影社",
+    "category": "文档",
+    "uploader": "孙七",
+    "uploadTime": "2024-11-20 11:00",
+    "size": "3.2MB",
+    "description": "摄影构图知识分享"
+  }
+]

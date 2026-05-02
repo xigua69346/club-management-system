@@ -1,0 +1,98 @@
+[
+  {
+    "username": "admin",
+    "password": "admin123",
+    "role": "admin",
+    "club": "",
+    "status": "活跃",
+    "avatar": "👤"
+  },
+  {
+    "username": "张三",
+    "password": "123321",
+    "role": "leader",
+    "club": "计算机协会",
+    "status": "活跃",
+    "avatar": "🐨"
+  },
+  {
+    "username": "王老师",
+    "password": "123321",
+    "role": "advisor",
+    "club": "计算机协会",
+    "status": "活跃",
+    "avatar": "👨‍🏫"
+  },
+  {
+    "username": "李四",
+    "password": "123321",
+    "role": "leader",
+    "club": "文学社",
+    "status": "活跃",
+    "avatar": "👩"
+  },
+  {
+    "username": "李老师",
+    "password": "123321",
+    "role": "advisor",
+    "club": "文学社",
+    "status": "活跃",
+    "avatar": "👩‍🏫"
+  },
+  {
+    "username": "王五",
+    "password": "123321",
+    "role": "leader",
+    "club": "篮球队",
+    "status": "活跃",
+    "avatar": "👨"
+  },
+  {
+    "username": "张老师",
+    "password": "123321",
+    "role": "advisor",
+    "club": "篮球队",
+    "status": "活跃",
+    "avatar": "👨‍🏫"
+  },
+  {
+    "username": "赵六",
+    "password": "123321",
+    "role": "leader",
+    "club": "志愿者协会",
+    "status": "活跃",
+    "avatar": "👨"
+  },
+  {
+    "username": "刘老师",
+    "password": "123321",
+    "role": "advisor",
+    "club": "志愿者协会",
+    "status": "活跃",
+    "avatar": "👩‍🏫"
+  },
+  {
+    "username": "孙七",
+    "password": "123321",
+    "role": "leader",
+    "club": "摄影社",
+    "status": "活跃",
+    "avatar": "👩"
+  },
+  {
+    "username": "陈老师",
+    "password": "123321",
+    "role": "advisor",
+    "club": "摄影社",
+    "status": "活跃",
+    "avatar": "👨‍🏫"
+  },
+  {
+    "username": "小张",
+    "password": "123321",
+    "role": "member",
+    "club": "计算机协会",
+    "status": "活跃",
+    "avatar": "👨‍🎓"
+  }
+]

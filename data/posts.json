@@ -1,0 +1,69 @@
+[
+  {
+    "author": "王五",
+    "content": "篮球友谊赛即将开始，欢迎观赛！",
+    "club": "篮球队",
+    "id": 1777690276560,
+    "likes": 1,
+    "comments": [],
+    "createdAt": "2026/5/2 10:51:16",
+    "liked": true
+  },
+  {
+    "author": "李四",
+    "content": "诗歌朗诵会圆满结束，感谢大家支持！",
+    "club": "文学社",
+    "id": 1777690250171,
+    "likes": 1,
+    "comments": [],
+    "createdAt": "2026/5/2 10:50:50",
+    "liked": true
+  },
+  {
+    "author": "张三",
+    "content": "今天参加了编程大赛，收获满满！！！",
+    "club": "",
+    "id": 1777689833299,
+    "likes": 1,
+    "comments": [
+      {
+        "id": 1777690153070,
+        "author": "李四",
+        "content": "恭喜恭喜"
+      },
+      {
+        "id": 1777690300863,
+        "author": "王五",
+        "content": "厉害"
+      },
+      {
+        "id": 1777690846390,
+        "author": "赵六",
+        "content": "真棒"
+      }
+    ],
+    "createdAt": "2026/5/2 10:43:53",
+    "liked": true
+  },
+  {
+    "author": "admin",
+    "content": "大家好",
+    "club": "",
+    "id": 1777659095578,
+    "likes": 1,
+    "comments": [
+      {
+        "id": 1777659137473,
+        "author": "admin",
+        "content": "hi"
+      },
+      {
+        "id": 1777690128175,
+        "author": "张三",
+        "content": "你好"
+      }
+    ],
+    "createdAt": "2026/5/2 02:11:35",
+    "liked": true
+  }
+]

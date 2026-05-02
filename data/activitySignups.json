@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "activityId": 1,
+    "username": "张三",
+    "status": "已签到",
+    "signupTime": "2024-12-01 13:30"
+  },
+  {
+    "id": 2,
+    "activityId": 1,
+    "username": "小张",
+    "status": "已签到",
+    "signupTime": "2024-12-01 13:45"
+  },
+  {
+    "id": 3,
+    "activityId": 2,
+    "username": "李四",
+    "status": "已签到",
+    "signupTime": "2024-11-15 18:30"
+  },
+  {
+    "id": 4,
+    "activityId": 4,
+    "username": "赵六",
+    "status": "已签到",
+    "signupTime": "2024-11-25 08:30"
+  },
+  {
+    "id": 5,
+    "activityId": 4,
+    "username": "小张",
+    "status": "已签到",
+    "signupTime": "2024-11-25 08:45"
+  },
+  {
+    "id": 6,
+    "activityId": 3,
+    "username": "王五",
+    "status": "已报名",
+    "signupTime": "2024-12-01 10:00"
+  },
+  {
+    "id": 7,
+    "activityId": 5,
+    "username": "孙七",
+    "status": "已报名",
+    "signupTime": "2024-12-05 09:00"
+  }
+]
